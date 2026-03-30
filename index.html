@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>System Fatality</title>
+  </head>
+  <body
+    class="bg-[#e81123] text-white font-mono min-h-screen flex flex-col items-start justify-start p-16 overflow-hidden cursor-none select-none"
+  >
+    <div class="max-w-4xl space-y-12 animate-pulse-slow">
+      <h1 class="text-4xl font-bold border-b-2 border-white pb-4 inline-block">
+        FATAL SYSTEM ERROR: ERROR 404
+      </h1>
+
+      <div class="text-xl leading-relaxed space-y-6">
+        <p>
+          Произошла критическая ошибка оборудования. Выполнение программы было
+          остановлено для предотвращения повреждения системы.
+        </p>
+
+        <div class="bg-black/20 p-6 rounded-sm">
+          <p class="mb-2">*** ERROR 404 404 ERROR ***</p>
+          <p>*** ERROR 404 404 ERROR ***</p>
+        </div>
+
+        <p>
+          Если это сообщение появилось впервые, перезагрузите компьютер. Если
+          ошибка повторится, проверьте настройки BIOS или замените видеоадаптер.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div
+          class="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"
+        ></div>
+        <p class="text-lg">Выполнение аварийного дампа памяти...</p>
+      </div>
+    </div>
+
+    <style>
+      @keyframes pulse-slow {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.95;
+        }
+      }
+      .animate-pulse-slow {
+        animation: pulse-slow 4s infinite ease-in-out;
+      }
+    </style>
+  </body>
+</html>
